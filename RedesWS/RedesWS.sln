@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedesWS", "RedesWS.csproj", "{7BAC306E-688A-4988-B2A5-B5D16AF140CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cliente", "Cliente\Cliente.csproj", "{3952C682-718F-4691-8C16-0B2C39D22A77}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BAC306E-688A-4988-B2A5-B5D16AF140CA} = {7BAC306E-688A-4988-B2A5-B5D16AF140CA}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BAC306E-688A-4988-B2A5-B5D16AF140CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BAC306E-688A-4988-B2A5-B5D16AF140CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BAC306E-688A-4988-B2A5-B5D16AF140CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BAC306E-688A-4988-B2A5-B5D16AF140CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3952C682-718F-4691-8C16-0B2C39D22A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3952C682-718F-4691-8C16-0B2C39D22A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3952C682-718F-4691-8C16-0B2C39D22A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3952C682-718F-4691-8C16-0B2C39D22A77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1895389C-94D9-4AFC-9911-A1D74ACCBDE4}
+	EndGlobalSection
+EndGlobal
