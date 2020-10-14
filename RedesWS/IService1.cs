@@ -16,7 +16,7 @@ namespace RedesWS
         [OperationContract]
         string GetRutValidacion(string value);
         [OperationContract]
-        string GetMensaje(string a, string b, string c, char d);
+        string GetMensaje(string a, string b, string c, string d);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);

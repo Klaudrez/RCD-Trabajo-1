@@ -5,3 +5,10 @@ C:\Users\Marce\source\repos\RedesWS\obj\Debug\RedesWS.csprojAssemblyReference.ca
 C:\Users\Marce\source\repos\RedesWS\obj\Debug\RedesWS.csproj.CoreCompileInputs.cache
 C:\Users\Marce\source\repos\RedesWS\obj\Debug\RedesWS.dll
 C:\Users\Marce\source\repos\RedesWS\obj\Debug\RedesWS.pdb
+C:\Users\Marce\source\repos\RCD-Trabajo-1\RedesWS\bin\RedesWS.dll.config
+C:\Users\Marce\source\repos\RCD-Trabajo-1\RedesWS\bin\RedesWS.dll
+C:\Users\Marce\source\repos\RCD-Trabajo-1\RedesWS\bin\RedesWS.pdb
+C:\Users\Marce\source\repos\RCD-Trabajo-1\RedesWS\obj\Debug\RedesWS.csprojAssemblyReference.cache
+C:\Users\Marce\source\repos\RCD-Trabajo-1\RedesWS\obj\Debug\RedesWS.csproj.CoreCompileInputs.cache
+C:\Users\Marce\source\repos\RCD-Trabajo-1\RedesWS\obj\Debug\RedesWS.dll
+C:\Users\Marce\source\repos\RCD-Trabajo-1\RedesWS\obj\Debug\RedesWS.pdb

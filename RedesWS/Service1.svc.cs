@@ -33,21 +33,30 @@ namespace RedesWS
                 return "Formato invalido";
         }
 
-        public string GetMensaje(string Ap, string Am, string Ns, char G)
+        public string GetMensaje(string Ap, string Am, string Ns, string G)
         {
-            string mensaje = "";
-            if (G == 'M')
-                mensaje += "Sr. ";
+            if (Ap != null && Ap != "" && Am != null && Am != "" && Ns != null && Ns != "" && G != null && G != "")
+            {
+                string mensaje = "";
+                if (Mayus(G) == "M")
+                    mensaje += "Sr. ";
+                else
+                {
+                    if (Mayus(G) == "F")
+                        mensaje += "Sra. ";
+                    else
+                        return "Opcion invalida";
+                }
+
+                mensaje = mensaje + Mayus(Ns) + " " + Mayus(Ap) + " " + Mayus(Am);
+
+                if (ValidarPalabra(Ap) && ValidarPalabra(Am) && ValidarPalabra(Ns) && ValidarPalabra(G))
+                    return mensaje;
+                else
+                    return "Nombre no valido";
+            }
             else
-                mensaje += "Sra. ";
-            
-            mensaje = mensaje + Mayus(Ns) + " " + Mayus(Ap) + " " + Mayus(Am);
-            
-            if(ValidarPalabra(Ap) && ValidarPalabra(Am) && ValidarPalabra(Ns))
-                return mensaje;
-            else
-                return "Nombre no valido";
-            
+                return "Hay campos en blanco ";
            
      
         }
