@@ -25,31 +25,26 @@ function RutValidacion($rut)
         return "Ingrese un rut valido. ";
 }
 
-function Mensaje($parametros)
+function Mensaje($Ap,$Am,$N,$G)
 {
-    $auxiliar=0;
     $respuesta="";
 
-    if($parametros!=NULL && $parametros!="")
+    if($Ap!=NULL && $Ap!="" && $Am!=NULL && $Am!="" && $N!=NULL && $N!="" && $G!=NULL && $G!="")
     {
-        foreach($parametros as $word)
+        
+        if(ValidarLetras($Ap) && ValidarLetras($Am) && ValidarLetras($N) && ValidarLetras($G))
         {
-            if(ValidarLetras($word))
-                $auxiliar++;
-        }
-        if($auxiliar==4)
-        {
-            if(Mayus($parametros[3])=="M")
+            if(Mayus($G)=="M")
                 $respuesta = $respuesta."Sr. "; 
             else
             {   
-                if(Mayus($parametros[3])=="F")
+                if(Mayus($G)=="F")
                     $respuesta = $respuesta."Sra. ";
                 else
                     return "Ingrese un genero valido";
             }
             
-            $respuesta = $respuesta.Mayus($parametros[2])." ".Mayus($parametros[0])." ".Mayus($parametros[1]);
+            $respuesta = $respuesta.Mayus($N)." ".Mayus($Ap)." ".Mayus($Am);
             return $respuesta;
 
         }

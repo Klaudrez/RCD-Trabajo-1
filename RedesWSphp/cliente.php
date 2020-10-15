@@ -10,8 +10,14 @@ if(empty($respuestarut))
 else
     echo $respuestarut;
 
-$parametros=["silva","escala","marcelo alberto","m"];
-$respuestamensaje = $cliente->call("Mensaje",array("Ap_A"=>$parametros,"Ap_M"=>$parametros,"Nombres"=>$parametros,"Genero"=>$parametros));
+$Apellido_p="";
+$Apellido_m="";
+$Nombres="";
+$Genero="";
+
+$parametros=array("Ap_A"=>$Apellido_p,"Ap_M"=>$Apellido_m,"Nombres"=>$Nombres,"Genero"=>$Genero);
+
+$respuestamensaje = $cliente->call("Mensaje",$parametros);
 if(empty($respuestamensaje))
     echo $respuestamensaje;
 else
